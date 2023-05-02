@@ -1,0 +1,592 @@
+/*FONTS*/
+@font-face {
+  font-family: "ubunturegular";
+  src: url("../assets/fonts/ubuntu-regular/ubuntu-regular-webfont.woff2") format("woff2"), url("../assets/fonts/ubuntu-regular/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ubuntumedium";
+  src: url("../assets/fonts/ubuntu-medium/ubuntu-medium-webfont.woff2") format("woff2"), url("../assets/fonts/ubuntu-medium/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ubuntubold";
+  src: url("../assets/fonts/ubuntu-bold/ubuntu-bold-webfont.woff2") format("woff2"), url("../assets/fonts/ubuntu-bold/ubuntu-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-family: "ubunturegular";
+  background-color: #BEE2FD;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps {
+  background-color: #483EFF;
+  border-radius: 10px;
+  width: 25%;
+}
+.steps .steps-elements {
+  padding-top: 40px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.steps .stepsElement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.steps .stepsElement .ovalnb {
+  width: 37px;
+  height: 37px;
+  background: #483EFF;
+  border: 1px solid white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 15px;
+  margin-left: 20px;
+  /* Denim */
+  color: white;
+}
+.steps .stepsElement .stepsElementText {
+  display: flex;
+  flex-direction: column;
+}
+.steps .stepsElement .stepsElementText p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ABBCFF;
+  margin-bottom: 10px;
+  font-family: "ubuntumedium";
+}
+.steps .stepsElement .stepsElementText h1 {
+  font-style: normal;
+  font-family: "ubuntubold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0;
+  color: #FFFFFF;
+}
+
+.personalInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 65%;
+  border-radius: 10px;
+}
+
+.askInfos {
+  display: flex;
+  flex-direction: column;
+}
+.askInfos .askInfosText h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  font-family: "ubuntubold";
+  color: #022959;
+}
+.askInfos .askInfosText p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #9699AA;
+}
+.askInfos .infosInput {
+  display: flex;
+  flex-direction: column;
+}
+.askInfos .infosInput label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #022959;
+}
+.askInfos .infosInput input {
+  background: #FFFFFF;
+  border: 1px solid #D6D9E6;
+  padding: 15px 0px;
+  padding-left: 18px;
+  height: 30%;
+  font-family: "ubuntumedium";
+  border-radius: 8px;
+}
+
+.nextBtnLink {
+  width: 25%;
+}
+
+.nextBtn {
+  background: #022959;
+  font-family: "ubuntumedium";
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  color: #FFFFFF;
+  border: none;
+  height: 40px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.nextBtn:hover {
+  cursor: pointer;
+}
+
+.selectPlan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 65%;
+  border-radius: 10px;
+}
+.selectPlan .plan {
+  margin-right: 40px;
+}
+.selectPlan .plan h1 {
+  color: #022959;
+  margin-bottom: 5px;
+}
+.selectPlan .plan p {
+  color: #9699AA;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.selectPlan .plan .cards {
+  display: flex;
+  width: 130%;
+}
+.selectPlan .plan .cards .cardPlan {
+  background: white;
+  width: 40%;
+  border: 1px solid #483EFF;
+  border-radius: 8px;
+  margin-right: 15px;
+  padding-left: 15px;
+}
+.selectPlan .plan svg {
+  margin-top: 30px;
+}
+.selectPlan .plan h4 {
+  margin-bottom: 0px;
+  margin-top: 30px;
+  color: #022959;
+}
+.selectPlan .plan p {
+  margin-top: 10px;
+}
+.selectPlan .plan .toggle-back {
+  background: #F8F9FF;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  width: 125%;
+}
+.selectPlan .plan .toggle-back .toggle {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+}
+.selectPlan .plan .toggle-back .toggle p {
+  color: #9699AA;
+  font-family: "ubuntubold";
+  margin-bottom: 10px;
+}
+.selectPlan .plan .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 125%;
+}
+.selectPlan .plan .buttons .nextBtn {
+  margin: 0 0;
+}
+.selectPlan .plan .buttons .goBack {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #9699AA;
+  font-family: "ubuntumedium";
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #022959;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #022959;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #022959;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.addOns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 75%;
+  border-radius: 10px;
+}
+.addOns .ons {
+  width: 50%;
+}
+.addOns .ons .buttons2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.addOns .ons .buttons2 .nextBtn {
+  margin: 0 0;
+}
+.addOns .ons .buttons2 .goBack2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #9699AA;
+  font-family: "ubuntumedium";
+}
+.addOns .ons h1 {
+  color: #022959;
+  margin-bottom: 5px;
+}
+.addOns .ons p {
+  color: #9699AA;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.addOns .ons .checkboxs {
+  display: flex;
+  flex-direction: column;
+}
+.addOns .ons .checkboxs .checkBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #483EFF;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 5px 15px;
+}
+.addOns .ons .checkboxs .checkBox:hover {
+  cursor: pointer;
+}
+.addOns .ons .checkboxs .checkBox .checkBoxLeft {
+  display: flex;
+}
+.addOns .ons .checkboxs .checkBox .checkBoxLeft input {
+  margin-right: 20px;
+  background: #483EFF;
+  width: 20px;
+  width: 20px;
+  border-radius: 4px;
+}
+.addOns .ons .checkboxs .checkBox .checkBoxLeft .checkBoxText h3 {
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "ubuntubold";
+  color: #022959;
+}
+.addOns .ons .checkboxs .checkBox .checkBoxLeft .checkBoxText p {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "ubuntubold";
+  color: #9699AA;
+  margin-bottom: 15px;
+}
+.addOns .ons .checkboxs .checkBox .checkBoxRight {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: #483EFF;
+}
+
+.finish {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 75%;
+  border-radius: 10px;
+}
+.finish .finishResult .result {
+  background-color: #F8F9FF;
+  padding: 5px 25px;
+}
+.finish .finishResult .result .result-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.finish .finishResult .result .result-top p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "ubuntubold";
+  text-align: right;
+  color: #022959;
+}
+.finish .finishResult .result .result-top .result-top-choice h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #022959;
+  font-family: "ubuntubold";
+}
+.finish .finishResult .result .row {
+  width: 100%;
+  border: 1px solid #9699AA;
+  margin-top: 25px;
+}
+.finish .finishResult .result .result-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.finish .finishResult .result .result-mid p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699AA;
+}
+.finish .finishResult .result .result-mid h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: #022959;
+}
+.finish .finishResult .result .result-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.finish .finishResult .result .result-bottom p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699AA;
+}
+.finish .finishResult .result .result-bottom h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  color: #022959;
+}
+.finish .finishResult .result .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.finish .finishResult .result .total p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9699AA;
+}
+.finish .finishResult .result .total h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "ubuntubold";
+  text-align: right;
+  color: #483EFF;
+}
+.finish .finishResult .buttons3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.finish .finishResult .buttons3 .nextBtn {
+  margin: 0 0;
+}
+.finish .finishResult .buttons3 .goBack3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #9699AA;
+  font-family: "ubuntumedium";
+}
+
+.thankyou {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 75%;
+  border-radius: 10px;
+  padding: 25px 0;
+}
+.thankyou .message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.thankyou .message h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 30px;
+  color: #022959;
+}
+.thankyou .message p {
+  width: 70%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #9699AA;
+}
+
+.confirmBtn {
+  background: #483EFF;
+  font-family: "ubuntumedium";
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  color: #FFFFFF;
+  border: none;
+  height: 40px;
+}
+.confirmBtn:hover {
+  cursor: pointer;
+}
+
+.change {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #9699AA;
+}/*# sourceMappingURL=App.css.map */
