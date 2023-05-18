@@ -3,7 +3,6 @@ import Steps from '../components/steps'
 import CardPlan from '../components/cardPlan'
 import { Link } from 'react-router-dom'
 import NextBtn from '../components/nextBtn'
-import styled from 'styled-components'
 
 
 const Plans = () => {

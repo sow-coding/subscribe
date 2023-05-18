@@ -217,10 +217,15 @@ body {
             & .cardPlan {
                 background: white;
                 width: 40%;
-                border: 1px solid #483EFF;
+                border: 1px solid #9699AA;
                 border-radius: 8px;
                 margin-right: 15px;
-                padding-left: 15px;            
+                padding-left: 15px;
+                &:hover {
+                    border: 1px solid #483EFF;
+                    cursor: pointer;
+                    background-color: #F8F9FF;
+                }            
             }
         }
 
@@ -272,6 +277,9 @@ body {
                 line-height: 18px;
                 color: #9699AA;
                 font-family: 'ubuntumedium';
+                &:hover {
+                    color: #022959;
+                }
             }
         }
     }
@@ -383,12 +391,14 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                border: 1px solid #483EFF;
+                border: 1px solid #9699AA;
                 border-radius: 8px;
                 margin: 10px 0;
                 padding: 5px 15px;
                 &:hover {
                     cursor: pointer;
+                    border: 1px solid #483EFF;
+                    background-color: #F8F9FF;
                 }
                 & .checkBoxLeft {
                     display: flex;
@@ -618,6 +628,7 @@ body {
     height: 40px;
     &:hover {
         cursor: pointer;
+        background-color: #928CFF
     }
 }
 
@@ -630,4 +641,7 @@ body {
     text-decoration-line: underline;
     
     color: #9699AA;
+    &:hover {
+        color: #483EFF;
+    }
 }
